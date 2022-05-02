@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Beauflor</title>
+    <link rel="stylesheet" type="text/css" href="css/beauflor.css" />
+    <!-- https://www.w3schools.com/html/html_favicon.asp -->
+    <link rel="icon" type="image/x-icon" href="images/beauflorbg.png" />
+</head>
+
+<body>
+    <!-- Header of the page-->
+    <header>
+        <img src="images/beauflorbg.png" alt="header" />
+    </header>
+
+    <!-- Navigation Bar-->
+    <div class="nav">
+        <ul>
+            <li> <a href="index.html" class="buttons">Home</a> </li>
+            <li> <a href="scenery.html" class="buttons">Scenery ▼ </a>
+                <ul>
+                    <li> <a href="beach.html">Beaches</a> </li>
+                    <li> <a href="city.html">Cities</a> </li>
+                    <li> <a href="lake.html">Lakes</a> </li>
+                    <li> <a href="about.html" class="buttons">About</a> </li>
+                    <li> <a href="mountain.html">Mountains</a> </li>
+                </ul>
+            </li>
+            <li> <a href="recycle.html" class="buttons">Recycle</a> </li>
+            <li> <a href="donate.html" class="buttons">Donate</a> </li>
+            <li> <a href="about.html" class="buttons">About</a> </li>
+            <li> <a href="contact.html" class="buttons">Contact</a> </li>
+
+        </ul>
+    </div>
+
+    <!-- BODY OF PAGE -->
+    <div id="wrapper">
+        <article>
+            <div class="container">
+                <form id="contact" method="post">
+                    <h3><b>Contact Me</b></h3>
+                    <h4>Need to contact me? Fill out the form below or click on one of my media's and I'll get back to
+                        you shortly.</h4>
+                    <table>
+                        <tr>
+                            <td>
+                                <input placeholder="Your name" type="text" tabindex="1" required autofocus />
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <input placeholder="Your Email Address" type="email" tabindex="2" required />
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <textarea placeholder="Type your Message Here...." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="contact-center">
+                                    <label for="social-medias">
+                                        <strong>Where did you hear about Beauflor? </strong>
+                                    </label>
+                                    <select style="font-family:Cambria,Cochin,Georgia,Times,'Times New Roman',serif"
+                                        name="social medias" id="social-medias">
+                                        <option value="Linkedin">Linkedin</option>
+                                        <option value="Github">Github</option>
+                                        <option value="Ads">Ads</option>
+                                        <option value="Friend">Friends</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br><br>
+                    <table>
+                        <tr>
+                            <td>
+                                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">
+                                    Submit
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
+
+                <div id="images">
+                    <a href="https://github.com/">
+                        <img src="images/github.png" class="smedia" style="width: 50px" alt="Github" />
+                    </a>
+                    <a href="mailto:gkf263@email.vccs.edu">
+                        <img src="images/email.png" class="smedia" style="width: 50px" alt="Email" />
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <img class="smedia" src="images/linkedin.png" style="width: 50px" alt="Linkedin" />
+                    </a>
+                </div>
+            </div>
+        </article>
+    </div>
+    <!-- Footer of the page-->
+    <footer class="contact-footer">
+        <p>
+            Terms of Service | Copyright ©️ 2022 Beauflor | Privacy Policy
+        </p>
+    </footer>
+
+
+</body>
+
+</html>

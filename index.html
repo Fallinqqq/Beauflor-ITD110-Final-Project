@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Beauflor</title>
+    <link rel="stylesheet" type="text/css" href="css/beauflor.css" />
+    <!-- https://www.w3schools.com/html/html_favicon.asp -->
+    <link rel="icon" type="image/x-icon" href="images/beauflorbg.png">
+</head>
+
+<!-- Body of the page-->
+
+<body>
+    <!-- Header of the page-->
+    <header>
+        <img src="images/beauflorbg.png" alt="header" />
+    </header>
+
+    <!-- Navigation Bar-->
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="index.html" class="buttons">Home</a>
+            <li><a href="scenery.html" class="buttons">Scenery ▼ </a>
+                <ul>
+                    <li><a href="beach.html">Beaches</a></li>
+                    <li><a href="city.html">Cities</a></li>
+                    <li><a href="lake.html">Lakes</a></li>
+                    <li><a href="mountain.html">Mountains</a></li>
+                </ul>
+            </li>
+            <li><a href="recycle.html" class="buttons">Recycle</a></li>
+            <li><a href="donate.html" class="buttons">Donate</a></li>
+            <li><a href="about.html" class="buttons">About</a></li>
+            <li><a href="contact.html" class="buttons">Contact</a></li>
+
+        </ul>
+    </div>
+
+    <div id="wrapper">
+        <article>
+            <h1 class="p1"><b>Welcome to Beauflor!</b></h1>
+            <div class="hometext">
+                <p> <strong>
+                        This website shows off many of the vast and beautiful sceneries that nature and even
+                        cities have to offer that were taken by the creator of this website.<br />
+                        Maybe one day you may want to visit these places or maybe simply you just want to see
+                        what
+                        this webite is all about!
+                    </strong>
+                </p>
+                <br />
+                <br />
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/4Z9mUjtFJYY?autoplay=1?controls=0start=17"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <p>Enjoy a nice scenic video of the U.S with calming music!</p>
+            </div>
+        </article>
+    </div>
+
+    <!-- Footer of the page-->
+    <footer>
+        <p>Terms of Service | Copyright ©️ 2022 Beauflor | Privacy Policy
+        </p>
+    </footer>
+
+    <!-- JavaScript Code for Slide Show -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                slides[i].style.maxheight = "500px";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4321); // Change image every 2 seconds
+        }
+    </script>
+
+</body>
+
+</html>
